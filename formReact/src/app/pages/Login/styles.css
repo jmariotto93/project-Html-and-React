@@ -1,6 +1,61 @@
-
-
-.container {
-    display:flex;
-    background-color: blue;
+body{
+    background-color: #5f5f5f;
+}
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.container{
+   display: flex;
+   height: 100vh;
+}
+.main{
+    width: 20%;
+    height: 60%;
+    margin: auto;
+    padding: 0.5rem;
+    background-color: #fff;
+    border-radius: 12px;
+}
+@media screen and (max-width: 900px) {
+    .main {
+      width: 60%;
+      padding: 1rem;
+    }
+  }
+.logo{
+    width: 2rem;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+.form{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+.sectionInputs{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.input{
+    width: 100%;
+   padding: 0.5rem;
+   border: none;
+   border-bottom: 1px solid #8d8c8c;
+   outline: none;
+   
+}
+.button{
+    margin-top: 1rem;
+    border: none;
+    padding: 0.5rem;
+    border-radius: 20px;
+    background: linear-gradient(0.25turn, #83b1be, #885ac5);
+    color: #fff;
+    text-transform: uppercase;
 }
